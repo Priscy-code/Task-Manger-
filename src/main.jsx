@@ -4,6 +4,8 @@ import React from "react";
 import App from "./App.jsx";
 import "./index.css";
 // import ReactDom from "react";
+// import { Provider } from "react-redux";
+// import Authstore from "./stores/StoreReducer.js";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -11,9 +13,11 @@ createRoot(document.getElementById("root")).render(
   </StrictMode>
 );
 
-// ReactDom.render(
-//   <React.StrictMode>
+// ReactDom.createRoot(document.getElementById("root")!).render(
+//   <Provider store = {Authstore}>
+
 //     <App />
-//   </React.StrictMode>,
-//   document.getElementById("root")
+
+//   </Provider>
+
 // );

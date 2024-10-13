@@ -30,7 +30,8 @@ const TaskManger = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center ">
-      <div className="bg-grayy shadow-lg max-w-md mt-20 items-center p-6 w-full ">
+      <div className="bg-grayy shadow-lg max-w-md mt-20 items-center p-6 w-full rounded-lg ">
+        <h1 className="text-center font-bold text-3xl">User Dashboard</h1>
         <h1 className="text-center font-bold ">Task Manager</h1>
 
         <input
@@ -38,7 +39,7 @@ const TaskManger = () => {
           placeholder="Task Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          className="w-full border border-black p-4 mt-4"
+          className="w-full border border-black p-4 mt-4 rounded-lg"
         />
 
         <textarea
